@@ -12,14 +12,14 @@
 Desenvolva uma API Rest de consulta de cidades do Brasil com dados comparativos. Nessa sessão você irá desenvolver uma API rest de consulta. A ideia é navegar pelas boas práticas de Java e do Spring, popular o bando de dados Postgres, criar serviço para cálculo de distância entre cidades.
 
 # Endpoints
-GET /api/v1/states
-GET /api/v1/states/{id}
-GET /api/v1/cities
-GET /api/v1/cities/{id}
-GET /api/v1/countries
-GET /api/v1/countries/{id}
-GET /api/v1/distances/by-points?from={id}&to={id}
-GET /api/v1/distances/per-cube?from={id}&to={id}
+- GET /api/v1/states
+- GET /api/v1/states/{id}
+- GET /api/v1/cities
+- GET /api/v1/cities/{id}
+- GET /api/v1/countries
+- GET /api/v1/countries/{id}
+- GET /api/v1/distances/by-points?from={id}&to={id}
+- GET /api/v1/distances/per-cube?from={id}&to={id}
 
 # Detalhes obtidos no README original do projeto
 ## DataBase
