@@ -6,7 +6,6 @@ import static java.lang.Math.sin;
 import static java.lang.Math.sqrt;
 import static java.lang.Math.toRadians;
 
-
 import com.github.andrelugomes.cities.entities.City;
 import com.github.andrelugomes.cities.repositories.CityRepository;
 import com.github.andrelugomes.utils.StringLocationUtils;
@@ -15,7 +14,6 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.geo.Point;
-import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -93,8 +91,8 @@ public class DistanceService {
     return cityRepository.distanceByCube(p1.getX(), p1.getY(), p2.getX(), p2.getY());
   }
 
-  private double doCalculation(final double lat1, final double lon1, final double lat2,
-                               final double lng2, final EarthRadius earthRadius) {
+  private double doCalculation(final double lat1, final double lon1, final double lat2, final double lng2,
+      final EarthRadius earthRadius) {
     double lat = toRadians(lat2 - lat1);
     double lon = toRadians(lng2 - lon1);
     double a = sin(lat / 2) * sin(lat / 2) + cos(toRadians(lat1)) * cos(toRadians(lat2)) * sin(lon / 2) * sin(lon / 2);
